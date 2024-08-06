@@ -6,7 +6,7 @@
 FROM python:3-slim
 RUN pip install paho-mqtt==1.6.1 
 RUN pip install requests==2.31.0
-RUN pip install PyYAML==6.0
+RUN pip install PyYAML==6.0.1
 ENV PYTHONUNBUFFERED="true" PYTHONDONTWRITEBYTECODE=1
 
 COPY paho_mqtt_client.py pythonClientConfig.yaml /
